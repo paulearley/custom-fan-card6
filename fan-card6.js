@@ -33,8 +33,7 @@ class CustomFanCard extends Polymer.Element {
 							style='[[_offCurrentColor]]'
                             toggles name="off"
                             on-tap='setSpeed'
-                            on-click='setSpeed' 
-                            disabled='[[_isOff]]'>
+                            on-click='setSpeed'>
                             <span>Off</span>
                         </button>
 
@@ -112,7 +111,6 @@ class CustomFanCard extends Polymer.Element {
 			},
 			_config: Object,
 			_stateObj: Object,
-			_isOff: Boolean,
 			_isOneSpeed: Boolean,
 			_isTwoSpeed: Boolean,
 			_isThreeSpeed: Boolean,
@@ -180,7 +178,6 @@ class CustomFanCard extends Polymer.Element {
 		
 		this.setProperties({
 			_stateObj: stateObj,
-			_isOff: stateObj.state === 'off',
 			_isOneSpeed: speed === '1' && stateObj.state === 'on',
 			_isTwoSpeed: speed === '2' && stateObj.state === 'on',
 			_isThreeSpeed: speed === '3' && stateObj.state === 'on',
