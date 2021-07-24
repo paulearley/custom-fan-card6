@@ -155,8 +155,8 @@ class CustomFanCard extends Polymer.Element {
 		let percent1 = 16; 
 		let percent2 = 33;
 		let percent3 = 50;
-		let percent4 = 67;
-		let percent5 = 84;
+		let percent4 = 66;
+		let percent5 = 83;
 		let percent6 = 100;
 		
 		let percent;
